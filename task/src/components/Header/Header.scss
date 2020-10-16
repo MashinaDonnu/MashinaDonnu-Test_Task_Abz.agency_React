@@ -29,7 +29,7 @@
           line-height: 24px;
         }
 
-        button {
+        a {
           @include button($red);
         }
       }

@@ -25,7 +25,7 @@ export const Header = () => {
                                     : null
                                 }
                             </p>
-                            <button className="btn">Sign up now</button>
+                            <a className="btn" href="/#register">Sign up now</a>
                         </div>
                     </div>
                 </div>
