@@ -1,0 +1,72 @@
+@import "src/variables";
+.opacity-bg {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $black;
+  opacity: .7;
+  &.open {
+    display: block;
+  }
+}
+
+.left-menu {
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 1001;
+  width: 290px;
+  top: 0;
+  left: -290px;
+  bottom: 0;
+  background: $white;
+  transition: left ease-in-out .4s;
+  &.open {
+    left: 0;
+  }
+  .logo {
+    padding: 17px 15px;
+    border-bottom: 1px solid $silver;
+  }
+  .left-menu-block {
+    //padding: 12px 15px;
+    padding: 10px 0 0 15px;
+    border-bottom: 1px solid $silver;
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        padding: 0;
+        //padding-bottom: 10px;
+        line-height: 45px;
+        a {
+          color: $black;
+          &:hover {
+            color: $active;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  //.opacity-bg {
+    .left-menu {
+      display: block;
+    }
+  //}
+}
+
+@media screen and (max-width: 550px){
+  .left-menu {
+    .logo {
+      padding: 8px 15px;
+    }
+  }
+}

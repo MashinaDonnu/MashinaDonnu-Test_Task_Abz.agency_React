@@ -1,0 +1,35 @@
+@import "src/variables";
+@import "src/mixins";
+.users {
+  background: #f9f9f3;
+  width: 100%;
+  padding-bottom: 125px;
+  .users-head {
+    p {
+      text-align: center;
+      font-size: 16px;
+      padding-top: 5px;
+    }
+  }
+  .btn-show-more {
+    @include button($red);
+    margin: 20px auto 3px auto;
+    text-align: center;
+    padding: 6px 0;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .users {
+    padding-top: 50px;
+    .users-head {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .btn-show-more {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.react-tooltip {
+    padding-top: 20px;
+    span {
+        background: $black;
+        color: #fff;
+        padding: 5px;
+        border-radius: 4px;
+        margin-top: 50px;
+    }
+}
+section {
+    padding-top: 150px;
+    padding-bottom: 155px;
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: -0.5px;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 1240px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 964px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 708px;
+    }
+    section {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 330px;
+    }
+    section {
+        padding-top: 10px;
+        //padding: 0;
+    }
+}

@@ -1,0 +1,22 @@
+@import "variables";
+@mixin button($bg: none, $width: 210px) {
+  display: block;
+  width: $width;
+  height: 38px;
+  background: $bg;
+  text-align: center;
+  border-radius: 5px;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    @if($bg == none) {
+      transition: color ease .3s;
+      color: $darkred
+    } @else {
+      transition: background-color ease .3s;
+      background: $darkred;
+      color: $white;
+    }
+  }
+}

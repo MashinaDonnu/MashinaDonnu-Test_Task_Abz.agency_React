@@ -1,0 +1,19 @@
+.footer {
+  position: absolute;
+  margin-top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  p {
+    text-align: center;
+    padding-top: 12px;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .footer {
+    padding-bottom: 40px;
+
+  }
+}
